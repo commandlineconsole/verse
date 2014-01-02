@@ -16,7 +16,7 @@ verse
 
 ## Running
 * Download all of the python dependencies (listed below)
-* run `poems.py` from the root directory IF there are no poems in the 'data' directory
+* run `python poems.py` from the command line in the root directory IF there are no poems in the 'data' directory
     - this should take ~30 minutes, because it takes a long time to scrape the web to get all of the necessary poems to compose a corpus
     - after running this once, you need not run it again
 * run `python app.py` from the root directory

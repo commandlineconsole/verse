@@ -84,4 +84,5 @@ def create_vocabularies():
 
 
 if __name__ == '__main__':
+    create_entries()
     create_vocabularies()
