@@ -11,7 +11,7 @@ import re
 emotions = [(s, em) for em in base_emotions for s in wn.synsets(em)[1].lemma_names]
 
 
-# Creates dicts from the poems on poemhunter using urllib2 and beautiful soup
+# Creates files from the poems on poemhunter using urllib and beautiful soup
 def create_entries():
     url = 'http://www.poemhunter.com'
     searchdir = '/poems/'
