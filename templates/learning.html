@@ -1,0 +1,22 @@
+<h2>Accuracy</h2>
+<p>
+{{accuracy}}
+</p>
+<hr>
+
+<h2>Errors</h2>
+  {% for (category, guess, poem, pos_ratio, neg_ratio) in errors %}
+  <p>
+  {% for word in poem %}
+  {{word.decode('utf-8', 'ignore')}}
+  {% endfor %}
+  </p>
+  <b>Category: {{ category }}</b>
+  <br>
+  <b>Guess: {{ guess }}</b>
+  <br>
+  <b>Positive Ratio: {{ pos_ratio }}</b>
+  <br>
+  <b>Negative Ratio: {{ neg_ratio }}</b>
+  {% endfor %}
+<hr>
