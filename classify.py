@@ -14,15 +14,6 @@ def poem_features(text):
     print pos_ratio, neg_ratio
     features = {'positive_ratio': pos_ratio, 'negative_ratio': neg_ratio}
 
-    #for disambiguation
-    #for emotion in base_emotions:
-        #count = len([word for word in text if word in lexicon[emotion]])
-        #ratio = float(count) / float(len(text))
-        #if ratio > 0.3:
-            #features['%s_ratio' % emotion] = True
-        #else:
-            #features['%s_ratio' % emotion] = False
-
     return features
 
 
